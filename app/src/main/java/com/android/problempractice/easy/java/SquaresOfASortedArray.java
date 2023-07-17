@@ -10,7 +10,7 @@ public class SquaresOfASortedArray {
     }
 
     public static int[] sortedSquares(int[] nums) {
-        int square = 0;
+        int square;
         for (int i = 0; i < nums.length; i++) {
             square = nums[i] * nums[i];
             nums[i]=square;

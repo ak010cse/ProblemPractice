@@ -8,6 +8,7 @@ public class Test {
     public static void main(String[] args) {
 
         System.out.println(romanToInt("MCMXCIV"));
+        System.out.println(isArmstrongNumber(71));
     }
 
     public static int romanToInt(String s) {
@@ -27,5 +28,23 @@ public class Test {
                 result += map.get(s.charAt(i));
         }
         return result;
+    }
+
+
+    public static boolean isArmstrongNumber(int number){
+        boolean isArmstrong = false;
+        int originalNum= number;
+        int reminder=0;
+        int result=0;
+        while (number!=0){
+            reminder = number%10;
+            result +=Math.pow(reminder,3);
+            number /=10;
+        }
+        System.out.println(result+" : "+number);
+        if (originalNum==result){
+            isArmstrong =true;
+        }
+        return isArmstrong;
     }
 }

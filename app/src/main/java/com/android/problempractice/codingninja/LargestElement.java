@@ -14,6 +14,9 @@ public class LargestElement {
         int[] arr = {4, 7, 8, 6, 7, 6};
         int n = arr.length;
         System.out.println(largestElement(arr, n));
+
+//        Time Complexity: O(N)
+//        Space Complexity: O(1)
     }
 
     static int largestElement(int[] arr, int n) {

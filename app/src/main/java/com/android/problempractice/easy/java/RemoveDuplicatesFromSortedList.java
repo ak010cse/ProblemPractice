@@ -1,6 +1,7 @@
 package com.android.problempractice.easy.java;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Stack;
 
 public class RemoveDuplicatesFromSortedList {
@@ -17,6 +18,8 @@ public class RemoveDuplicatesFromSortedList {
             }
         }
         System.out.println(arrayList);
-    }
 
+        // Second Optimal Approach
+
+    }
 }

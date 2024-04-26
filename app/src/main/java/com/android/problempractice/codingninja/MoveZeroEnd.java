@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MoveZeroEnd {
 
     public static void main(String[] args){
-        int[] arr= {0,0,0,1};
+        int[] arr= {2,0,3,0,1};
         int n = arr.length;
         System.out.println(Arrays.toString(moveZeros(n,arr)));
     }
@@ -19,7 +19,6 @@ public class MoveZeroEnd {
                 result[index++] = a[i];
                 System.out.println(a[i]);
             }
-
         }
         return result;
     }
